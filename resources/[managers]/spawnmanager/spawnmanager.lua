@@ -313,13 +313,13 @@ function spawnPlayer(spawnIdx, cb)
 
         ShutdownLoadingScreen()
 
-        if IsScreenFadedOut() then
-            DoScreenFadeIn(500)
+        -- if IsScreenFadedOut() then
+        --     DoScreenFadeIn(500)
 
-            while not IsScreenFadedIn() do
-                Citizen.Wait(0)
-            end
-        end
+        --     while not IsScreenFadedIn() do
+        --         Citizen.Wait(0)
+        --     end
+        -- end
 
         -- and unfreeze the player
         freezePlayer(PlayerId(), false)
